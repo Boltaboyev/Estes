@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    transition: 0.2s;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #a0a747;
+}
+
+.container2 {
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+@media (min-width: 1400px) {
+    .container2 {
+        max-width: 1350px;
+    }
+}
+
+.rabota::before {
+    content: "";
+    height: 5px;
+    width: 5px;
+    position: absolute;
+    border-radius: 100%;
+    background: #a0a747;
+    left: -10px;
+}
+
+.tel::before {
+    content: "";
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    background: #a0a747;
+    bottom: 0;
+    opacity: 0.3;
+}
+
+.section_title {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 100%;
+    letter-spacing: -0.05em;
+    text-align: center;
+    color: #1a1a1a;
+}
+
+.swiper {
+    width: 100%;
+}
+
+.swiper-slide {
+    position: relative;
+    overflow: hidden;
+}
+
+.swiper-pagination-bullet {
+    background: #a0a747  !important;
+    border: 1px solid #fff !important;
+}
